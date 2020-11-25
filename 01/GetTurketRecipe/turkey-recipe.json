@@ -1,0 +1,44 @@
+{
+  "Salt": {
+    "amount": 0.05,
+    "unit": "cups"
+  },
+  "Water": {
+    "amount": 0.66,
+    "unit": "cups"
+  },
+  "Brown Sugar": {
+    "amount": 0.13,
+    "unit": "cups"
+  },
+  "Shallots": {
+    "amount": 0.2
+  },
+  "Cloves of garlic": {
+    "amount": 0.4
+  },
+  "Whole peppercorns": {
+    "amount": 0.13,
+    "unit": "tablespoons"
+  },
+  "Dried juniper berries": {
+    "amount": 0.13,
+    "unit": "tablespoons"
+  },
+  "Fresh rosemary": {
+    "amount": 0.13,
+    "unit": "tablespoons"
+  },
+  "Thyme": {
+    "amount": 0.06,
+    "unit": "tablespoons"
+  },
+  "Brine time": {
+    "amount": 2.4,
+    "unit": "hours"
+  },
+  "Roast time": {
+    "amount": 15,
+    "unit": "hours"
+  }
+}
