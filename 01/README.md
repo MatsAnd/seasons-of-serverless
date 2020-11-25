@@ -1,40 +1,33 @@
+[👈🏼 &nbsp; Go back](../README.md)<br/>
+
 # Challenge 1: The Perfect Holiday Turkey 🦃
 
-## Your Chefs: Jen Looper, Cloud Advocate (Microsoft) and Darren Butler and Eric Yu, Microsoft Student Ambassadors
+## API
 
-## This week's featured region: North America
+### ``GET /turkey/{weight}``
 
-Here in North America, many families believe that the holidays are simply not complete without a proper turkey on the table. Juicy meat, crispy skin, mouth-watering gravy: a good turkey has it all! The only problem is these birds can be hard to cook so they don't turn out dry and tough. The secret? A proper brine! 
+Provide the weight in lbs (default unit), or specify the unit. Example: ``/turkey/2 kg``<br/>
+Currently supported units are lbs, kg and g.
 
-Here's a [sample recipe](https://www.aspicyperspective.com/best-turkey-brine-recipe/) for that important process in the production of a perfect turkey.
+#### Example
 
-There's a science to a great turkey brine, but we, as software engineers, are both absent-minded and need an automated way to remind ourselves each year of the proper percentages of ingredients of a good brine, based on the weight of the turkey.
+<div style="float: right">
+  <a href="https://ma-func-sos-01.azurewebsites.net/api/turkey/8">🔗 &nbsp; Open example </a>
+</div>
 
-According to Chef Darren's calculations, the brine equation and roast recommendation looks like this:
-### Brine Instructions
-
-- Salt (in cups) = 0.05 * lbs of turkey
-- Water (gallons) = 0.66 *  lbs of turkey
-- Brown sugar (cups)  = 0.13 * lbs of turkey
-- Shallots = 0.2 * lbs of turkey
-- Cloves of garlic = 0.4 * lbs of turkey
-- Whole peppercorns (tablespoons) = 0.13 * lbs of turkey
-- Dried juniper berries (tablespoons) = 0.13 * lbs of turkey
-- Fresh rosemary (tablespoons) = 0.13 * lbs of turkey
-- Thyme (tablespoons) = 0.06 * lbs of turkey
-- Brine time (in hours) = 2.4 * lbs of turkey
-- Roast time (in minutes) = 15 * lbs of turkey
-
-## Your challenge 🍽 
-
-Convert this brine equation and cook time to an automated process so that when you input a turkey's weight, you will be given the amount of water, sugar, salt, and spices to add and a recommendation on how long to cook it.
-
-Let's assume you have available a large cooler for your turkey and its brine and that it's defrosted.
-
-Our chefs recommends trying an Azure Function to generate your recipe, and encourages you to share your own turkey secrets by adding a link to your solution in the Issues tab!
-
-## Resources/Tools Used 🚀
-
--   **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-10922-cxa)**
--   **[Postman](https://www.getpostman.com/downloads/)**
--   **[Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=academic-10922-cxa)**
+``GET /turkey/8``
+```json
+{
+  "Salt": "0.4 cup",
+  "Water": "5.28 cups",
+  "Brown Sugar": "1.04 cups",
+  "Shallots": "1.6",
+  "Cloves of garlic": "3.2",
+  "Whole peppercorns": "1.04 tablespoons",
+  "Dried juniper berries": "1.04 tablespoons",
+  "Fresh rosemary": "1.04 tablespoons",
+  "Thyme": "0.48 tablespoon",
+  "Brine time": "19.2 hours",
+  "Roast time": "120 hours"
+}
+```
