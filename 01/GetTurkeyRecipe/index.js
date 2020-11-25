@@ -8,7 +8,7 @@ const secretTurkeyRecipe = require('../data/turkey-recipe.json')
  * @param {string} input User's input
  */
 const convertWeightToLbs = (input) => {
-  const amount = parseInt(input.replace(/[^0-9]/g, '') || '0')
+  const amount = parseFloat(input.replace(/[^0-9.]/g, ''))
   const unit = input.toLowerCase().replace(/[^a-z]/g, '')
 
   if (unit === '' || unit === 'lb' || unit === 'lbs' || unit === 'pounds') return amount
