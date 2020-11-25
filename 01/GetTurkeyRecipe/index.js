@@ -39,9 +39,11 @@ const calculateTurkeyRecipe = (weight) => {
 module.exports = async function (context, req) {
   try {
     const { weight } = req.params
+    if (!weight) throw new Error('No weight was provided! Please provide a weight as the last route parameter like this: /turkey/2lbs')
+
     const weightInLbs = convertWeightToLbs(weight)
 
-    context.log(`Calculating turkey recipe - input weight of${weight} is the same as ${weightInLbs} lbs`)
+    context.log(`Calculating turkey recipe - input weight of ${weight} is the same as ${weightInLbs} lbs`)
 
     const calculatedRecipe = calculateTurkeyRecipe(weightInLbs)
     context.res = getResponse(calculatedRecipe)
