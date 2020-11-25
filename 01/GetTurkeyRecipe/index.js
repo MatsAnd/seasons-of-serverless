@@ -1,5 +1,5 @@
 const getResponse = require('../lib/get-response')
-const secretTurkeyRecipe = require('./turkey-recipe.json')
+const secretTurkeyRecipe = require('../data/turkey-recipe.json')
 
 /**
  * Converts kg and g to lbs based on user input.
