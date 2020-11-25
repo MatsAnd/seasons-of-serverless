@@ -15,7 +15,7 @@ Here are my solutions to [the challenges](https://github.com/microsoft/Seasons-o
 
 ## Contact
 
-- [:octocat: &nbsp; @MatsAnd](https://github.com/MatsAnd)
+- [:octocat:&nbsp; @MatsAnd](https://github.com/MatsAnd)
 - [🐦 &nbsp; @matsassen](https://twitter.com/matsassen)
 - [👨🏼‍🎓 &nbsp; LinkedIn](https://www.linkedin.com/in/mats-a/)
 
